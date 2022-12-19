@@ -38,3 +38,7 @@ def train_fNIRS():
     dataframe = pd.DataFrame({'TrialId': trial_id,
                               'Label': test_pred})
     dataframe.to_csv("sample_submission.csv", index=False, sep=',')
+
+    
+if __name__ == '__main__':
+    train_fNIRS()
